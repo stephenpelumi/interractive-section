@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Epilogue', sans-serif;
+  line-height: 25px;
+}
+body {
+  background-color: aliceblue;
+  color: rgb(119, 119, 119);
+}
+.number_control {
+  background-color: rgba(220, 222, 227, 0.387);
+  width: max-content;
+  margin: 5px;
+  height: max-content;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgba(2, 2, 200, 0.854);
+}
+.sign, .sign_minus {
+  margin-left: 4px;
+  cursor: pointer;
+}
+.sign:hover {
+  filter:opacity(0.5) drop-shadow(0 0 0 blue) brightness(0.3);
+}
+
+.sign_minus:hover {
+  filter:opacity(0.5) drop-shadow(0 0 0 blue) brightness(0.3);
+}
+.signtwo, .signtwo_minus{
+  cursor: pointer;
+}
+.signtwo:hover {
+  filter:opacity(0.5) drop-shadow(0 0 0 blue) brightness(0.3);
+}
+.signtwo_minus:hover {
+  filter:opacity(0.5) drop-shadow(0 0 0 blue) brightness(0.3);
+}
+.first_comment,
+.second_comment {
+  display: flex;
+  gap: 10px;
+  background-color: white;
+  width: max-content;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 30px;
+}
+.third_comment, .fourth_comment, .fifth_comment {
+  display: flex;
+  gap: 10px;
+  background-color: white;
+  width: max-content;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 5px;
+}
+.second_comment{
+ margin-top: 5px;
+}
+.fifth_comment{
+  display: none;
+}
+.header_details {
+  display: flex;
+  gap: 15px;
+}
+.amyrobson, .maxblagun, .ramsesmiron, .juliusomo {
+  font-weight: 600;
+  color: rgb(67, 66, 66);
+}
+
+.reply {
+  display: flex;
+  gap: 5px;
+  justify-content: right;
+  margin-left: auto;
+  margin-top: -18px;
+  cursor: pointer;
+}
+.reply:hover{
+  filter:opacity(40%)
+}
+.reply_word {
+  margin-top: -5px;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(3, 91, 168);
+}
+
+.edit_word{
+  color: rgb(3, 91, 168);
+  font-weight: bolder;
+ }
+.first_content, .second_content{
+  inline-size: 530px;
+  margin-top: 15px;
+}
+.third_content, .fourth_content, .fifth_content {
+  inline-size: 450px;
+  margin-top: 12px;
+}
+
+.comment_area_one, .comment_area_two{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background-color: white;
+  width: max-content;
+  margin: auto;
+  margin-top: 5px;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+.reply_button_one, .reply_button_two, .reply_button_three{
+  height: fit-content;
+  width: 80px;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 144, 0.734);
+  border: none;
+  border-radius: 5px;
+}
+.reply_button_one:hover, .reply_button_two:hover, .reply_button_three:hover{
+  filter: opacity(30%);
+}
+
+.user_functions{
+ display: flex;
+ gap: 20px;
+ justify-content: end;
+ margin-top: -20px;
+ cursor: pointer;
+}
+.delete:hover, .edit:hover{
+  filter:opacity(40%)
+}
+.delete{
+  color: rgb(210, 77, 77);
+  font-weight: bolder;
+}
+.update{
+ padding:10px;
+ margin-top: 10px;
+ background-color: rgba(3, 3, 142, 0.767);
+ color: white;
+ width: fit-content;
+ margin-left: auto;
+ border-radius: 5px;
+ font-size: 15px;
+ font-weight: 500;
+ display: none;
+ cursor: pointer;
+}
+
+ .border{
+  border-left: 1px solid  rgba(186, 186, 186, 0.633);
+  height: fit-content; 
+  margin-top: 20px;
+  margin-left: 520px;
+  padding-right: 450px;
+  position: relative;
+ }
+ .comment_area_three{
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background-color: white;
+  width: max-content;
+  padding: 20px;
+  border-radius: 10px;
+ }
+ .main_for_delete{
+  width: fit-content;
+  height: max-content;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: -200px;
+  margin-left: 120px;
+  z-index: 10;
+  display: none;
+ }
+ .header_for_delete{
+   color: rgb(52, 52, 52);
+ }
+ .content_for_delete{
+  inline-size: 250px;
+  margin-top: 10px;
+ }
+ .cancel_for_delete{
+  width: 130px;
+  background-color: rgb(114, 114, 114);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(74, 74, 74, 0.149);
+  padding: 10px;
+  cursor: pointer;
+ }
+ .accept_for_delete{
+  width:130px;
+  background-color: rgb(229, 65, 65);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(74, 74, 74, 0.149);
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+ }
+ .Second_comment_accept{
+  width:130px;
+  background-color: rgb(229, 65, 65);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(74, 74, 74, 0.149);
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+ }
+ .for_buttons{
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+ }
+ #overlay{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(72, 71, 71, 0.36);
+  z-index: 2;
+ }
+ @media screen and (min-width: 300px) and (max-width: 700px) {
+  *{
+    margin: 0%;
+    padding: 0%;
+  }
+  body{
+    width: 100%;
+   }
+  .first_comment, .second_comment{
+    width: max-content;
+    margin-left: auto;
+    padding-bottom: 50px;
+    display: block;
+  }
+  .third_comment, .fourth_comment, .fifth_comment{
+    width: min-content;
+    margin-left: auto;
+    padding-bottom: 50px;
+  }
+  
+  .number_control{
+    display: flex;
+    gap: 15px;
+    margin-top:195px;
+    position:absolute;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  .number_control_two{
+    margin-top:225px;
+  }
+  .number_control_three{
+    margin-top:195px;
+  }
+  .number_control_fourth{
+    margin-top:215px;
+  }
+  .number_control_fifth{
+    margin-top:140px;
+    height: 20px;
+  }
+  
+  .sign, .signtwo{
+    height: 10px;
+    width: 10px;
+    margin-top: 3.5px;
+  }
+  .sign_minus, .signtwo_minus, .sign_three, .sign_four{
+    height: 3px;
+    width: 10px;
+    margin-top: 8px;
+  }
+  .first_content, .second_content{
+    inline-size: 270px;
+  }
+  
+  .third_content, .fourth_content, .fifth_content{
+    inline-size: 270px;
+  }
+  .reply{
+    position: absolute;
+    margin-top:180px;
+    margin-left: 200px;
+  }
+  .reply_two, .reply_three{
+    margin-top: 180px;
+  }
+  .reply_two{
+    margin-top: 210px;
+  }
+  .user_functions{
+    position: absolute;
+    margin-top:200px;
+    margin-left: 150px;
+    font-size: 13px;
+  }
+  .edit_img, .delete_img{
+    height: 11px;
+  }
+  .edit_word{
+  color: rgb(3, 91, 168);
+  font-weight: bolder;
+ }
+
+  .border{
+    padding: 0%;
+    border-color: black;
+    padding-left:0%;
+    margin-left: auto;
+    margin-top: 5px;
+    justify-content: center;
+    border: none;
+  }
+  .comment_box_one{
+    width: 270px;
+  }
+  .comment_area_one{
+    width: fit-content;
+    padding: 4%;
+    margin-left: auto;
+    padding-bottom: 50px;
+  }
+  .img_comment_area{
+    position: absolute;
+    padding-top: 180px;
+    margin-right: 250px;
+   }
+  .reply_button_one{
+    width: max-content;
+    /* height: 30px; */
+    font-size: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    margin-top: 135px;
+    margin-left: 200px;
+  }
+  .comment_box_two{
+    width: 270px;
+    height: 80px;
+  }
+  .comment_area_two{
+    padding-bottom: 60px;
+  }
+  .reply_button_two{
+    width: max-content;
+    font-size: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    margin-top: 95px;
+    margin-left: 200px;
+  }
+  .img_comment_two{
+    position: absolute;
+    padding-top: 95px;
+    margin-right: 260px;
+  }
+  #Fresh_Comment{
+    width: fit-content;
+  }
+  .fifth_comment{
+    height:130px;
+  }
+  .comment_area_three{
+    width: 270px;
+    margin-top: 5px;
+    padding-bottom: 55px;
+  }
+  .reply_button_three{
+    position: absolute;
+    margin-top: 135px;
+    margin-left: 200px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: max-content;
+    height: max-content;
+    
+  }
+  .img_last_textarea{
+    position: absolute;
+    padding-top: 180px;
+    margin-right: 250px;
+  }
+  .main_for_delete{
+    width: min-content;
+    position: fixed;
+    margin-left: auto;
+    margin-top: -600px;
+  }
+  .overall_for_mobile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .cancel_for_delete, .accept_for_delete{
+    width: fit-content;
+  }
+  .user_function_mobile{
+    margin-top:120px;
+  }
+}
+
+  @media screen and (min-width: 700px) and (max-width: 1300px) {
+    .border{
+      width: 100%;
+      margin-left: auto;
+    }
+  }

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive comments section</title>
+
+    <!-- This is the section for the css link -->
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The main code starts from here -->
+    <main>
+      <!-- The first comment section starts here -->
+      <article class="first_comment">
+        <!-- the first number control -->
+        <section class="number_control">
+          <img
+            onclick="PlusTwelve()"
+            src="./images/icon-plus.svg"
+            class="sign"
+            alt=""
+            width="10px"
+          />
+          <div id="Twelve">12</div>
+          <img
+            onclick="MinusTwelve()"
+            src="./images/icon-minus.svg"
+            alt=""
+            class="sign_minus"
+            width="10px"
+          />
+        </section>
+        <!-- the number contol ends here -->
+        <section>
+          <!-- This is the image section -->
+          <div class="header_details">
+            <img
+              src="./images/avatars/image-amyrobson.png"
+              width="25px"
+              alt=""
+            />
+            <!-- The image section ends here -->
+
+            <span class="amyrobson"> amyrobson </span>
+            <span class="one_month"> 1 month ago </span>
+          </div>
+
+          <!-- the first repky icon -->
+          <div class="reply">
+            <img src="./images/icon-reply.svg" alt="" height="10px" />
+            <div class="reply_word" onclick="reflect()">Reply</div>
+          </div>
+          <!-- the reply icon ends here -->
+
+          <!-- The first content starts here -->
+          <div class="first_content">
+            Impressive! Though it seems the drag feature could be improved. But
+            overall it looks incredible. You've nailed the design and the
+            responsiveness at various breakpoints works really well.
+          </div>
+          <!-- the first content ends here -->
+        </section>
+      </article>
+      <!-- the first comment ends here -->
+
+      <!-- The first reply section -->
+      <article id="reply_display_one" class="comment_area_one">
+        <img
+          class="img_comment_area"
+          src="./images/avatars/image-juliusomo.png"
+          alt=""
+          width="30px"
+          style="object-fit: contain; margin-top: -40px"
+        />
+        <textarea
+          class="comment_box_one"
+          name=""
+          id=""
+          cols="55"
+          style="border-radius: 5px"
+          rows="5"
+        >
+@amyrobson, yeah, the attention to detail with the design is</textarea
+        >
+        <button class="reply_button_one">REPLY</button>
+      </article>
+      <!-- The end of the first reply -->
+
+      <!-- The second reply starts here -->
+      <article class="second_comment">
+        <section class="number_control number_control_two">
+          <img class="signtwo" src="./images/icon-plus.svg" alt="" />
+          <div>5</div>
+          <img class="signtwo_minus" src="./images/icon-minus.svg" alt="" />
+        </section>
+        <section>
+          <div class="header_details">
+            <img
+              src="./images/avatars/image-maxblagun.png"
+              alt=""
+              width="25px"
+            />
+            <span class="maxblagun"> maxblagun </span>
+            <span> 2 weeks ago </span>
+          </div>
+          <div class="reply reply_two">
+            <img src="./images/icon-reply.svg" alt="" height="10px" />
+            <div class="reply_word">Reply</div>
+          </div>
+          <div class="second_content">
+            Woah, your project looks awesome! How long have you been coding for?
+            I'm still new, b`ut think I want to dive into React as well soon.
+            Perhaps you can give me an insight on where I can learn React?
+            Thanks!
+          </div>
+        </section>
+      </article>
+      <!-- This is the end of the second reply-->
+
+      <!-- The border combines the third, fourth and fifth comment -->
+      <article>
+        <section class="border">
+
+          <!-- The third comment starts here -->
+          <div class="third_comment">
+
+            <!-- The third number control -->
+            <div class="number_control number_control_three">
+              <img class="signtwo" src="./images/icon-plus.svg" alt="" />
+              <div>4</div>
+              <img
+                class="signtwo sign_three"
+                src="./images/icon-minus.svg"
+                alt=""
+              />
+            </div>
+            <!-- The third number control ends here -->
+            <div>
+              <div>
+                <div class="header_details">
+                  <img
+                    src="./images/avatars/image-ramsesmiron.png"
+                    alt=""
+                    width="25px"
+                  />
+                  <span class="ramsesmiron">ramsesmiron</span>
+                  <span>1 week ago</span>
+                </div>
+                <div onclick="reflectTwo()" class="reply reply_three">
+                  <img src="./images/icon-reply.svg" alt="" height="10px" />
+                  <div class="reply_word">Reply</div>
+                </div>
+              </div>
+              <!-- This is the beginning of the third content -->
+              <div class="third_content">
+                <a href="#">@maxblagun</a>
+                If you're still new, I'd recommend focusing on the fundamentals
+                of HTML, CSS, and JS before considering React. It's very
+                tempting to jump ahead but lay a solid foundation first.
+              </div>
+              <!-- The third contents ends here -->
+            </div>
+          </div>
+
+          <!-- The second comment area starts here -->
+          <div id="reply_display_two" class="comment_area_two">
+            <img
+              class="img_comment_two"
+              src="./images/avatars/image-juliusomo.png"
+              alt=""
+              width="30px"
+              style="object-fit: contain"
+            />
+            <textarea
+              class="comment_box_two"
+              name=""
+              id=""
+              cols="44"
+              rows="5"
+              style="border-radius: 5px"
+            >
+@ramsesmiron, just to add another point</textarea
+            >
+            <button class="reply_button_two">REPLY</button>
+          </div>
+          <!-- The second comment area ends here -->
+
+          <!-- The overlay effect -->
+          <div id="overlay"></div>
+          <!-- The end of the overlay tab -->
+
+          <!-- This is the confirm section -->
+          <div class="overall_for_mobile">
+            <div id="confirm" class="main_for_delete">
+              <h3 class="header_for_delete">Delete comment</h3>
+              <div class="content_for_delete">
+                Are you sure you want to delete this comment? This will remove
+                the comment and can't be undone.
+              </div>
+              <!-- The buttons for confirmation starts here -->
+              <div class="for_buttons">
+                <button onclick="Cancel()" class="cancel_for_delete">
+                  NO, CANCEL
+                </button>
+                <button
+                  id="first_accept_button"
+                  onclick="Accept()"
+                  class="accept_for_delete"
+                >
+                  YES, DELETE
+                </button>
+                <button
+                  onclick="NewAccept()"
+                  id="second_accept_button"
+                  class="Second_comment_accept"
+                >
+                  YES, DELETE
+                </button>
+              </div>
+              <!-- The buttons for confirmation ends here -->
+            </div>
+          </div>
+          <!-- The confirm section stops here -->
+
+          <!-- The fourth comment starts here -->
+          <div id="fourth_comment" class="fourth_comment">
+            <div class="number_control number_control_fourth">
+              <img class="signtwo" src="./images/icon-plus.svg" alt="" />
+              <div>2</div>
+              <img
+                class="signtwo sign_four"
+                src="./images/icon-minus.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <div class="header_details">
+                <img
+                  src="./images/avatars/image-juliusomo.png"
+                  alt=""
+                  width="25px"
+                />
+                <div class="juliusomo">juliusomo</div>
+                <div>you</div>
+                <span>2 days ago</span>
+              </div>
+              <div class="user_functions">
+                <div onclick="Deleted()" class="delete">
+                  <img
+                    class="delete_img"
+                    src="./images/icon-delete.svg"
+                    alt=""
+                  />
+                  <span> Delete </span>
+                </div>
+                <div class="edit" onclick="Editability()">
+                  <img class="edit_img" src="./images/icon-edit.svg" alt="" />
+                  <span class="edit_word">Edit</span>
+                </div>
+              </div>
+              <!-- The fourth content starts here -->
+              <div class="fourth_content">
+                <div id="fourth_content" contenteditable="true">
+                  <a href="#">@ramsesmiron</a>
+                  I couldn't agree more with this. Everything moves so fast and
+                  it always seems like everyone knows the newest
+                  library/framework. But the fundamentals are what stay
+                  constant.
+                </div>
+                <div id="update" onclick="UpDate()" class="update">UPDATE</div>
+              </div>
+              <!-- The fourth content ends here -->
+            </div>
+          </div>
+          <!-- The fourth comment ends here -->
+
+          <!-- The Fifth comment starts here -->
+          <div id="fifth_comment" class="fifth_comment">
+
+            <!-- The number control for the fifth comment starts here -->
+            <div class="number_control number_control_fifth">
+              <img class="signtwo" src="./images/icon-plus.svg" alt="" />
+              <div>1</div>
+              <img
+                class="signtwo sign_four"
+                src="./images/icon-minus.svg"
+                alt=""
+              />
+            </div>
+            <!-- The number control for the fifth comment ends here -->
+            <div>
+              <div class="header_details">
+                <img
+                  src="./images/avatars/image-juliusomo.png"
+                  alt=""
+                  width="25px"
+                />
+                <div class="juliusomo">juliusomo</div>
+                <div>you</div>
+                <span>Now</span>
+              </div>
+              <!-- This contains the delete and edit function -->
+              <div class="user_functions user_function_mobile">
+                <div onclick="NewDeleted()" class="delete newdelete">
+                  <img src="./images/icon-delete.svg" alt="" />
+                  <span> Delete </span>
+                </div>
+                <div class="edit newedit" onclick="NewEditability()">
+                  <img src="./images/icon-edit.svg" alt="" />
+                  <span>Edit</span>
+                </div>
+                <!-- This is end of the delete and edit function  -->
+              </div>
+              <!-- This is the fifth content -->
+              <div class="fifth_content">
+                <div id="Fresh_comment" contenteditable="true">
+                  <a href="#">@ramsesmiron</a>
+                  <div id="fifthcontent"></div>
+                </div>
+                <div
+                  id="updateNew"
+                  onclick="NewUpDate()"
+                  class="update Newupdate"
+                >
+                  UPDATE
+                </div>
+              </div>
+              <!-- This is the end of the fifth content -->
+            </div>
+          </div>
+        </section>
+        <!-- This is the end of the fifth comment -->
+
+        <!-- This is the last commet area for the new comment entry -->
+        <div class="comment_area_three">
+          <img
+            class="img_last_textarea"
+            src="./images/avatars/image-juliusomo.png"
+            alt=""
+            width="30px"
+            style="object-fit: contain; margin-top: -40px"
+          />
+          <textarea
+            id="Fresh_Comment"
+            placeholder="Add a Comment"
+            name=""
+            id=""
+            cols="55"
+            rows="5"
+            style="border-radius: 5px"
+          ></textarea>
+          <button onclick="SendIt()" class="reply_button_three">SEND</button>
+        </div>
+        <!-- This is the end of the last comment section -->
+      </article>
+
+      <!-- This is the footer -->
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.linkedin.com/in/pelumi-ajuwon">Ajuwon Pelumi</a>.
+      </div>
+      <!-- This is the end of the footer -->
+    </main>
+    <!-- The main code ends here -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
